@@ -3,3 +3,939 @@
 [2012-10-07 18:08:17.502] [INFO] timeline - start up
 [2012-10-07 18:09:08.132] [INFO] timeline - time
 [2012-10-07 18:09:08.146] [INFO] timeline - start up
+[2012-10-17 14:24:30.459] [INFO] timeline - start up
+[2012-10-17 14:24:39.043] [INFO] timeline - [TypeError: undefined is not a function]
+TypeError: undefined is not a function
+    at Command.exports.timeline.thrift.createServer.get [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:29:27)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:39.048] [INFO] timeline - [TypeError: Object #<RedisClient> has no method 'zremrangeByRank']
+TypeError: Object #<RedisClient> has no method 'zremrangeByRank'
+    at Command.exports.timeline.thrift.createServer.add [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:39:31)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:39.050] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:55:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:40.310] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:40.312] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:40.313] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:41.751] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:41.761] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:41.763] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:43.492] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:43.509] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:43.511] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:45.754] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:45.764] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:45.766] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:48.891] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:48.911] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:24:48.913] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:32:16.202] [INFO] timeline - start up
+[2012-10-17 14:32:19.487] [INFO] timeline - [ReferenceError: util is not defined]
+ReferenceError: util is not defined
+    at Object.exports.timeline.thrift.createServer.get (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:26:28)
+    at TimeLineIFaceProcessor.process_get (C:\Users\Administrator\IdeaProjects\timeline\thrift\TimeLineIFace.js:837:17)
+    at TimeLineIFaceProcessor.process (C:\Users\Administrator\IdeaProjects\timeline\thrift\TimeLineIFace.js:820:39)
+    at exports.createServer (C:\Users\Administrator\node_modules\thrift\lib\thrift\server.js:42:19)
+    at Socket.TFramedTransport.receiver (C:\Users\Administrator\node_modules\thrift\lib\thrift\transport.js:69:9)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at TCP.onread (net.js:396:14)
+[2012-10-17 14:32:44.188] [INFO] timeline - start up
+[2012-10-17 14:32:46.820] [INFO] timeline - [ReferenceError: util is not defined]
+ReferenceError: util is not defined
+    at Object.exports.timeline.thrift.createServer.get (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:27:28)
+    at TimeLineIFaceProcessor.process_get (C:\Users\Administrator\IdeaProjects\timeline\thrift\TimeLineIFace.js:837:17)
+    at TimeLineIFaceProcessor.process (C:\Users\Administrator\IdeaProjects\timeline\thrift\TimeLineIFace.js:820:39)
+    at exports.createServer (C:\Users\Administrator\node_modules\thrift\lib\thrift\server.js:42:19)
+    at Socket.TFramedTransport.receiver (C:\Users\Administrator\node_modules\thrift\lib\thrift\transport.js:69:9)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at TCP.onread (net.js:396:14)
+[2012-10-17 14:33:00.575] [INFO] timeline - start up
+[2012-10-17 14:33:04.682] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:33:05.697] [INFO] timeline - [TypeError: undefined is not a function]
+TypeError: undefined is not a function
+    at Command.exports.timeline.thrift.createServer.get [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:31:27)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:05.702] [INFO] timeline - [TypeError: Object #<RedisClient> has no method 'zremrangeByRank']
+TypeError: Object #<RedisClient> has no method 'zremrangeByRank'
+    at Command.exports.timeline.thrift.createServer.add [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:41:31)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:05.704] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:57:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:06.971] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:06.972] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:06.976] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:08.414] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:08.415] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:33:08.416] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:22.988] [INFO] timeline - start up
+[2012-10-17 14:36:26.383] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:36:26.394] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:36:26.395] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:36:27.401] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:36:27.402] [INFO] timeline - [TypeError: undefined is not a function]
+TypeError: undefined is not a function
+    at Command.exports.timeline.thrift.createServer.get [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:32:27)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:27.406] [INFO] timeline - [TypeError: Object #<RedisClient> has no method 'zremrangeByRank']
+TypeError: Object #<RedisClient> has no method 'zremrangeByRank'
+    at Command.exports.timeline.thrift.createServer.add [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:43:31)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:27.408] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:60:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:28.669] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:28.671] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:28.672] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:30.107] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:30.109] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:36:30.111] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:37:55.974] [INFO] timeline - start up
+[2012-10-17 14:38:01.082] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:38:01.104] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:38:01.105] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:38:02.116] [INFO] timeline - [TypeError: Object #<RedisClient> has no method 'zremrangeByRank']
+TypeError: Object #<RedisClient> has no method 'zremrangeByRank'
+    at Command.exports.timeline.thrift.createServer.add [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:43:31)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:38:02.125] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:60:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:01.091] [INFO] timeline - start up
+[2012-10-17 14:48:03.544] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:48:03.555] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:48:03.556] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:48:04.563] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:68:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:04.571] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:48:04.571] [INFO] timeline - [TypeError: undefined is not a function]
+TypeError: undefined is not a function
+    at Command.exports.timeline.thrift.createServer.get [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:33:32)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:04.574] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:05.834] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:05.835] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:05.836] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:07.268] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:07.269] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:07.278] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:09.015] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:09.016] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:09.017] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:11.277] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:11.279] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:48:11.280] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:49:13.855] [INFO] timeline - start up
+[2012-10-17 14:49:17.144] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:49:17.180] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:49:30.275] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:49:30.279] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:49:30.280] [INFO] timeline - [TypeError: undefined is not a function]
+TypeError: undefined is not a function
+    at Command.exports.timeline.thrift.createServer.get [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:33:32)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:01.519] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:01.528] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:68:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:01.538] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:02.794] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:02.804] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:02.994] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:04.237] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:04.258] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:04.757] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:05.982] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:06.002] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:07.015] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:08.260] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:08.280] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:10.150] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:11.404] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:11.414] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:14.773] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:16.035] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:16.042] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:21.922] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:23.196] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:23.202] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:33.383] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:34.658] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:34.664] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:52.150] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:52.911] [INFO] timeline - start up
+[2012-10-17 14:50:52.913] [INFO] timeline - error:Error: listen EADDRINUSE
+[2012-10-17 14:50:53.427] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:50:53.431] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:01.154] [INFO] timeline - start up
+[2012-10-17 14:51:03.510] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:51:03.521] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:51:03.521] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:51:04.529] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:04.535] [INFO] timeline - [ReferenceError: response is not defined]
+ReferenceError: response is not defined
+    at Command.exports.timeline.thrift.createServer.remove [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:68:23)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:04.538] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:51:04.538] [INFO] timeline - [TypeError: undefined is not a function]
+TypeError: undefined is not a function
+    at Command.exports.timeline.thrift.createServer.get [as callback] (C:\Users\Administrator\IdeaProjects\timeline\timelineservice.js:33:32)
+    at RedisClient.flush_and_error (C:\Users\Administrator\node_modules\redis\index.js:118:25)
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:143:10)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:05.801] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:05.802] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:05.803] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:07.245] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:07.246] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:07.247] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:08.995] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:08.996] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:08.997] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:11.257] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:11.259] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:11.261] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:14.391] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:14.393] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:14.394] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:19.017] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:19.019] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:19.021] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:26.170] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:26.180] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:26.182] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:37.625] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:37.627] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:37.635] [INFO] timeline - [Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED]
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (C:\Users\Administrator\node_modules\redis\index.js:148:24)
+    at Socket.<anonymous> (C:\Users\Administrator\node_modules\redis\index.js:83:14)
+    at Socket.EventEmitter.emit (events.js:88:17)
+    at Socket._destroy.self.errorEmitted (net.js:328:14)
+    at process.startup.processNextTick.process._tickCallback (node.js:244:9)
+[2012-10-17 14:51:46.392] [INFO] timeline - start up
+[2012-10-17 14:51:48.731] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:51:48.741] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:51:48.742] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:51:49.746] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:54:45.724] [INFO] timeline - start up
+[2012-10-17 14:54:51.368] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:54:51.381] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:54:51.382] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:54:52.380] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:57:57.468] [INFO] timeline - start up
+[2012-10-17 14:57:59.812] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:57:59.831] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:57:59.831] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:58:00.832] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 14:58:45.458] [INFO] timeline - start up
+[2012-10-17 14:58:47.675] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 14:58:47.717] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 14:58:47.718] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 14:58:48.722] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 15:02:54.997] [INFO] timeline - start up
+[2012-10-17 15:03:07.877] [INFO] timeline - add:uid=ning,typeArray=1,mid=123123
+[2012-10-17 15:03:55.660] [INFO] timeline - start up
+[2012-10-17 15:04:01.591] [INFO] timeline - add:uid=ning,typeArray=1,mid=123123
+[2012-10-17 15:04:36.522] [INFO] timeline - start up
+[2012-10-17 15:04:42.928] [INFO] timeline - add:uid=ning,typeArray=1,mid=123123
+[2012-10-17 15:05:14.019] [INFO] timeline - add:uid=ning,typeArray=1,mid=123123
+[2012-10-17 15:07:08.523] [INFO] timeline - start up
+[2012-10-17 15:07:10.417] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 15:07:10.428] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 15:07:10.428] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 15:07:10.435] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Error: ERR value is not an integer
+[2012-10-17 15:07:34.398] [INFO] timeline - start up
+[2012-10-17 15:07:36.546] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 15:07:36.557] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 15:07:36.557] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 15:07:36.565] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Error: ERR value is not an integer
+[2012-10-17 15:07:43.204] [INFO] timeline - add:uid=ning,typeArray=1,mid=123123
+[2012-10-17 15:15:09.542] [INFO] timeline - start up
+[2012-10-17 16:18:03.986] [INFO] timeline - start up
+[2012-10-17 16:18:15.596] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:18:15.606] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:18:15.607] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:18:16.605] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 16:19:52.450] [INFO] timeline - start up
+[2012-10-17 16:19:55.100] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:19:55.116] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:19:55.117] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:19:56.119] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 16:20:37.619] [INFO] timeline - start up
+[2012-10-17 16:20:39.680] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:20:39.695] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:20:39.696] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:20:40.698] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 16:21:52.424] [INFO] timeline - start up
+[2012-10-17 16:21:57.506] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:21:57.530] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:21:57.531] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:22:07.606] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+[2012-10-17 16:22:41.352] [INFO] timeline - start up
+[2012-10-17 16:22:41.353] [INFO] timeline - error:Error: listen EADDRINUSE
+[2012-10-17 16:22:48.116] [INFO] timeline - start up
+[2012-10-17 16:22:50.549] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:23:50.472] [INFO] timeline - start up
+[2012-10-17 16:23:52.416] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:23:53.426] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED,reply=undefined
+[2012-10-17 16:24:21.491] [INFO] timeline - start up
+[2012-10-17 16:24:24.797] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:24:25.808] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343,err=Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED,reply=undefined
+[2012-10-17 16:24:55.456] [INFO] timeline - start up
+[2012-10-17 16:24:59.767] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343
+[2012-10-17 16:24:59.787] [INFO] timeline - remove:uid=ningcl,type=1,mid=12343,err=null,reply=0
+[2012-10-17 16:25:41.690] [INFO] timeline - start up
+[2012-10-17 16:25:43.999] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:26:03.840] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:26:03.843] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:26:03.848] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Error: ERR value is not an integer
+[2012-10-17 16:27:07.241] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:27:07.243] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:27:07.247] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Error: ERR value is not an integer
+[2012-10-17 16:28:33.398] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
+[2012-10-17 16:28:33.399] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
+[2012-10-17 16:28:33.405] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Error: ERR value is not an integer

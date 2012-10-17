@@ -12,16 +12,17 @@ connection.on('error', function(err) {
     console.error(err);
 });
 
-
-client.get("ningcl",ShareStruct_ttypes.TimeLineType.Inbox,0,4,function(err,reponse){
-    console.log("get"+reponse)
-})
-
-client.add("ningcl",[ShareStruct_ttypes.TimeLineType.Inbox],"123143",function(err,response){
+client.add("ningcl",[ShareStruct_ttypes.TimeLineType.Inbox],"1231431232",function(err,response){
     console.log("add"+response)
 })
 
-client.remove("ningcl","12343",ShareStruct_ttypes.TimeLineType.Inbox,function(err,response){
+client.get("ningcl",ShareStruct_ttypes.TimeLineType.Inbox,1,4,function(err,reponse){
+    console.log(reponse.mids)
+})
+
+
+
+client.remove("ningcl","123143",ShareStruct_ttypes.TimeLineType.Inbox,function(err,response){
     console.log("rem"+response)
 })
 

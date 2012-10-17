@@ -308,8 +308,8 @@ TimeLineIFace_add_result.prototype.read = function(input) {
     switch (fid)
     {
       case 0:
-      if (ftype == Thrift.Type.BOOL) {
-        this.success = input.readBool();
+      if (ftype == Thrift.Type.I32) {
+        this.success = input.readI32();
       } else {
         input.skip(ftype);
       }
@@ -334,160 +334,8 @@ TimeLineIFace_add_result.prototype.read = function(input) {
 TimeLineIFace_add_result.prototype.write = function(output) {
   output.writeStructBegin('TimeLineIFace_add_result');
   if (this.success) {
-    output.writeFieldBegin('success', Thrift.Type.BOOL, 0);
-    output.writeBool(this.success);
-    output.writeFieldEnd();
-  }
-  if (this.error) {
-    output.writeFieldBegin('error', Thrift.Type.STRUCT, 1);
-    this.error.write(output);
-    output.writeFieldEnd();
-  }
-  output.writeFieldStop();
-  output.writeStructEnd();
-  return;
-};
-
-var TimeLineIFace_getUnRead_args = function(args) {
-  this.uid = null;
-  if (args) {
-    if (args.uid !== undefined) {
-      this.uid = args.uid;
-    }
-  }
-};
-TimeLineIFace_getUnRead_args.prototype = {};
-TimeLineIFace_getUnRead_args.prototype.read = function(input) {
-  input.readStructBegin();
-  while (true)
-  {
-    var ret = input.readFieldBegin();
-    var fname = ret.fname;
-    var ftype = ret.ftype;
-    var fid = ret.fid;
-    if (ftype == Thrift.Type.STOP) {
-      break;
-    }
-    switch (fid)
-    {
-      case 1:
-      if (ftype == Thrift.Type.STRING) {
-        this.uid = input.readString();
-      } else {
-        input.skip(ftype);
-      }
-      break;
-      case 0:
-        input.skip(ftype);
-        break;
-      default:
-        input.skip(ftype);
-    }
-    input.readFieldEnd();
-  }
-  input.readStructEnd();
-  return;
-};
-
-TimeLineIFace_getUnRead_args.prototype.write = function(output) {
-  output.writeStructBegin('TimeLineIFace_getUnRead_args');
-  if (this.uid) {
-    output.writeFieldBegin('uid', Thrift.Type.STRING, 1);
-    output.writeString(this.uid);
-    output.writeFieldEnd();
-  }
-  output.writeFieldStop();
-  output.writeStructEnd();
-  return;
-};
-
-var TimeLineIFace_getUnRead_result = function(args) {
-  this.success = null;
-  this.error = null;
-  if (args) {
-    if (args.success !== undefined) {
-      this.success = args.success;
-    }
-    if (args.error !== undefined) {
-      this.error = args.error;
-    }
-  }
-};
-TimeLineIFace_getUnRead_result.prototype = {};
-TimeLineIFace_getUnRead_result.prototype.read = function(input) {
-  input.readStructBegin();
-  while (true)
-  {
-    var ret = input.readFieldBegin();
-    var fname = ret.fname;
-    var ftype = ret.ftype;
-    var fid = ret.fid;
-    if (ftype == Thrift.Type.STOP) {
-      break;
-    }
-    switch (fid)
-    {
-      case 0:
-      if (ftype == Thrift.Type.MAP) {
-        var _size8 = 0;
-        var _rtmp312;
-        this.success = {};
-        var _ktype9 = 0;
-        var _vtype10 = 0;
-        _rtmp312 = input.readMapBegin();
-        _ktype9 = _rtmp312.ktype;
-        _vtype10 = _rtmp312.vtype;
-        _size8 = _rtmp312.size;
-        for (var _i13 = 0; _i13 < _size8; ++_i13)
-        {
-          if (_i13 > 0 ) {
-            if (input.rstack.length > input.rpos[input.rpos.length -1] + 1) {
-              input.rstack.pop();
-            }
-          }
-          var key14 = null;
-          var val15 = null;
-          key14 = input.readI32();
-          val15 = input.readI32();
-          this.success[key14] = val15;
-        }
-        input.readMapEnd();
-      } else {
-        input.skip(ftype);
-      }
-      break;
-      case 1:
-      if (ftype == Thrift.Type.STRUCT) {
-        this.error = new Exception_ttypes.EngineException();
-        this.error.read(input);
-      } else {
-        input.skip(ftype);
-      }
-      break;
-      default:
-        input.skip(ftype);
-    }
-    input.readFieldEnd();
-  }
-  input.readStructEnd();
-  return;
-};
-
-TimeLineIFace_getUnRead_result.prototype.write = function(output) {
-  output.writeStructBegin('TimeLineIFace_getUnRead_result');
-  if (this.success) {
-    output.writeFieldBegin('success', Thrift.Type.MAP, 0);
-    output.writeMapBegin(Thrift.Type.I32, Thrift.Type.I32, Thrift.objectLength(this.success));
-    for (var kiter16 in this.success)
-    {
-      if (this.success.hasOwnProperty(kiter16))
-      {
-        var viter17 = this.success[kiter16];
-        output.writeI32(kiter16);
-        output.writeI32(viter17);
-      }
-    }
-    output.writeMapEnd();
+    output.writeFieldBegin('success', Thrift.Type.I32, 0);
+    output.writeI32(this.success);
     output.writeFieldEnd();
   }
   if (this.error) {
@@ -609,8 +457,8 @@ TimeLineIFace_remove_result.prototype.read = function(input) {
     switch (fid)
     {
       case 0:
-      if (ftype == Thrift.Type.BOOL) {
-        this.success = input.readBool();
+      if (ftype == Thrift.Type.I32) {
+        this.success = input.readI32();
       } else {
         input.skip(ftype);
       }
@@ -635,8 +483,8 @@ TimeLineIFace_remove_result.prototype.read = function(input) {
 TimeLineIFace_remove_result.prototype.write = function(output) {
   output.writeStructBegin('TimeLineIFace_remove_result');
   if (this.success) {
-    output.writeFieldBegin('success', Thrift.Type.BOOL, 0);
-    output.writeBool(this.success);
+    output.writeFieldBegin('success', Thrift.Type.I32, 0);
+    output.writeI32(this.success);
     output.writeFieldEnd();
   }
   if (this.error) {
@@ -735,43 +583,6 @@ TimeLineIFaceClient.prototype.recv_add = function(input,mtype,rseqid) {
   }
   return callback('add failed: unknown result');
 };
-TimeLineIFaceClient.prototype.getUnRead = function(uid, callback) {
-  this.seqid += 1;
-  this._reqs[this.seqid] = callback;
-  this.send_getUnRead(uid);
-};
-
-TimeLineIFaceClient.prototype.send_getUnRead = function(uid) {
-  var output = new this.pClass(this.output);
-  output.writeMessageBegin('getUnRead', Thrift.MessageType.CALL, this.seqid);
-  var args = new TimeLineIFace_getUnRead_args();
-  args.uid = uid;
-  args.write(output);
-  output.writeMessageEnd();
-  return this.output.flush();
-};
-
-TimeLineIFaceClient.prototype.recv_getUnRead = function(input,mtype,rseqid) {
-  var callback = this._reqs[rseqid] || function() {};
-  delete this._reqs[rseqid];
-  if (mtype == Thrift.MessageType.EXCEPTION) {
-    var x = new Thrift.TApplicationException();
-    x.read(input);
-    input.readMessageEnd();
-    return callback(x);
-  }
-  var result = new TimeLineIFace_getUnRead_result();
-  result.read(input);
-  input.readMessageEnd();
-
-  if (null !== result.error) {
-    return callback(result.error);
-  }
-  if (null !== result.success) {
-    return callback(null, result.success);
-  }
-  return callback('getUnRead failed: unknown result');
-};
 TimeLineIFaceClient.prototype.remove = function(uid, mid, g, callback) {
   this.seqid += 1;
   this._reqs[this.seqid] = callback;
@@ -851,20 +662,6 @@ TimeLineIFaceProcessor.prototype.process_add = function(seqid, input, output) {
   this._handler.add(args.uid, args.g, args.mid, function (success) {
     result.success = success;
     output.writeMessageBegin("add", Thrift.MessageType.REPLY, seqid);
-    result.write(output);
-    output.writeMessageEnd();
-    output.flush();
-  })
-}
-
-TimeLineIFaceProcessor.prototype.process_getUnRead = function(seqid, input, output) {
-  var args = new TimeLineIFace_getUnRead_args();
-  args.read(input);
-  input.readMessageEnd();
-  var result = new TimeLineIFace_getUnRead_result();
-  this._handler.getUnRead(args.uid, function (success) {
-    result.success = success;
-    output.writeMessageBegin("getUnRead", Thrift.MessageType.REPLY, seqid);
     result.write(output);
     output.writeMessageEnd();
     output.flush();

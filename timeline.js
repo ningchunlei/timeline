@@ -39,7 +39,7 @@ timeline.on("close",function(err){
 })
 
 process.on('uncaughtException', function (exception) {
-    log.info(exception);
+    //log.info(exception);
 });
 
 timeline.listen(conf.server.port)
