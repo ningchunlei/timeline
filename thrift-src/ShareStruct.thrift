@@ -16,10 +16,12 @@ enum MsgType{
 }
 
 enum RelationType{
-  Followers = 21,
-  Following = 22,
-}
+  UserFollowers = 21,
+  UserFollowing = 22,
+  TopicFollowers = 23,
+  TopicFollowing = 24
 
+}
 enum GradeCategory{
   Grade7 = 31,
   Grade8 = 32,
@@ -59,6 +61,8 @@ struct TimeLine{
     2: TimeLineType group,
     3: list<string> mids
 }
+
+
 
 
 
