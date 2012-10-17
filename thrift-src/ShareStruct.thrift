@@ -6,25 +6,24 @@ include "ErrorNo.thrift"
 enum TimeLineType {
   Inbox = 1,
   Outbox = 2,
-  At = 3,
-  Repost = 4,
-  Comment = 5,
-  Favorite = 6,
+  ReadNotice = 3,
+  UnReadNotice = 4
 }
 
 enum MsgType{
-   Repost = 4,
-   Comment = 5,
-   Post = 7,
+   Comment = 10,
+   Post = 11
 }
 
 enum RelationType{
-  Followers = 8,
-  Following = 9,
+  Followers = 21,
+  Following = 22,
 }
 
-enum MsgTag {
-   All = 10
+enum GradeCategory{
+  Grade7 = 31,
+  Grade8 = 32,
+  Grade9 = 33
 }
 
 enum AttachType{
@@ -41,25 +40,18 @@ struct Attach{
 	3: optional string attachname
 }
 
-struct ShortURL {
-	1: string url,
-	2: string tiny_url,
-	3: optional string info,
-	4: string actual_url
-}
-
 struct Msg{
   1: string mid,
   2: string msgtext,
   3: string uid,
   5: string pushlishTime,
   6: MsgType type,
-  7: MsgTag tag,
+  7: GradeCategory category,
   8: string ip,
   9: string device,
-  10: list<string> atIds,
-  11: list<Attach> attachments,
-  12: list<ShortURL> shorturl
+  10: list<Attach> attachments,
+  11: string msgdesc,
+  12: list<string> tags
 }
 
 struct TimeLine{
