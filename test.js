@@ -23,7 +23,8 @@ fid = fs.openSync("b","w+")
 var output = new TBinaryProtocol(new ttransport.TBufferedTransport(undefined, function(buf) {
     fs.write(fid, buf, 0, buf.length, null)
 }));
-var t = new ShareStruct_ttypes.TimeLine({"uid":"aa","group":ShareStruct_ttypes.TimeLineType.Inbox,"mids":["123","123123"]})
+//var t = new ShareStruct_ttypes.TimeLine({"uid":"aa","group":ShareStruct_ttypes.TimeLineType.Inbox,"mids":["123","123123"]})
+t =new ShareStruct_ttypes.Msg({"uid":"aaa","mid":"msgid","msgtext":"msgtext"})
 t.write(output)
 output.flush()
 

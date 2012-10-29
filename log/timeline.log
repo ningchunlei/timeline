@@ -939,3 +939,4 @@ Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
 [2012-10-17 16:28:33.398] [INFO] timeline - add:uid=ningcl,typeArray=1,mid=123143
 [2012-10-17 16:28:33.399] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4
 [2012-10-17 16:28:33.405] [INFO] timeline - get:uid=ningcl,type=1,start=0,len=4,err=Error: ERR value is not an integer
+[2012-10-20 18:32:34.151] [INFO] timeline - start up
