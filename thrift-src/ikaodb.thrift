@@ -20,5 +20,7 @@ service IKaoDBIFace{
       list<string> getFollow(1:string uid,2:i32 start,3:i32 len,4 :ShareStruct.RelationType type) throws (1:Exception.EngineException error),
       list<string> getFans(1:string uid,2:i32 start,3:i32 len,4:ShareStruct.RelationType type) throws (1:Exception.EngineException error)
 
+      i32 postMsg(1:ShareStruct.Msg msg) throws (1:Exception.EngineException error)
+
 
 }
