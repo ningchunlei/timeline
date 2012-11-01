@@ -36,6 +36,11 @@ enum AttachType{
 	SinaPhoto = 4
 }
 
+enum OtherLogin{
+   QQ = 41,
+   RenRen=42
+}
+
 struct Attach{
 	1: string attachtext,
 	2: AttachType type,
@@ -60,6 +65,26 @@ struct TimeLine{
     1: string uid,
     2: TimeLineType group,
     3: list<string> mids
+}
+
+struct User{
+    1: string phone,
+    2: string nick,
+    3: string password,
+    4: i32 city,
+    5: i32 street,
+    6: i32 school,
+    7: i32 grade,
+    8: i32 sex,
+    9: i32 uid,
+    10: string code,
+    11: i32 type,
+    12: i32 money,
+    13: i32 point,
+    14: string desc,
+    15: list<i32> tags,
+    16: string qq;
+    17: string renren;
 }
 
 
