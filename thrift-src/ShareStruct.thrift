@@ -41,6 +41,34 @@ enum OtherLogin{
    RenRen=42
 }
 
+enum  ReserveUID{
+   latest = 0,
+   chinese = 1,
+   math = 2,
+   eng = 3,
+   physics = 4,
+   chemistry = 5,
+
+   chinese_7 = 11,
+   math_7 = 12,
+   eng_7 = 13,
+   physics_7 = 14,
+   chemistry_7 = 15,
+
+   chinese_8 = 21,
+   math_8 = 22,
+   eng_8 = 23,
+   physics_8 = 24,
+   chemistry_8 = 25,
+
+   chinese_9 = 31,
+   math_9 = 32,
+   eng_9 = 33,
+   physics_9 = 34,
+   chemistry_9 = 35
+
+}
+
 struct Attach{
 	1: string attachtext,
 	2: AttachType type,
