@@ -14,7 +14,7 @@ var ttypes = require('./timeline_types');
 var TimeLineIFace_get_args = function(args) {
   this.uid = null;
   this.g = null;
-  this.start = null;
+  this.latest = null;
   this.len = null;
   if (args) {
     if (args.uid !== undefined) {
@@ -23,8 +23,8 @@ var TimeLineIFace_get_args = function(args) {
     if (args.g !== undefined) {
       this.g = args.g;
     }
-    if (args.start !== undefined) {
-      this.start = args.start;
+    if (args.latest !== undefined) {
+      this.latest = args.latest;
     }
     if (args.len !== undefined) {
       this.len = args.len;
@@ -60,8 +60,8 @@ TimeLineIFace_get_args.prototype.read = function(input) {
       }
       break;
       case 3:
-      if (ftype == Thrift.Type.I32) {
-        this.start = input.readI32();
+      if (ftype == Thrift.Type.STRING) {
+        this.latest = input.readString();
       } else {
         input.skip(ftype);
       }
@@ -94,9 +94,9 @@ TimeLineIFace_get_args.prototype.write = function(output) {
     output.writeI32(this.g);
     output.writeFieldEnd();
   }
-  if (this.start) {
-    output.writeFieldBegin('start', Thrift.Type.I32, 3);
-    output.writeI32(this.start);
+  if (this.latest) {
+    output.writeFieldBegin('latest', Thrift.Type.STRING, 3);
+    output.writeString(this.latest);
     output.writeFieldEnd();
   }
   if (this.len) {
@@ -504,19 +504,19 @@ var TimeLineIFaceClient = exports.Client = function(output, pClass) {
     this._reqs = {};
 };
 TimeLineIFaceClient.prototype = {};
-TimeLineIFaceClient.prototype.get = function(uid, g, start, len, callback) {
+TimeLineIFaceClient.prototype.get = function(uid, g, latest, len, callback) {
   this.seqid += 1;
   this._reqs[this.seqid] = callback;
-  this.send_get(uid, g, start, len);
+  this.send_get(uid, g, latest, len);
 };
 
-TimeLineIFaceClient.prototype.send_get = function(uid, g, start, len) {
+TimeLineIFaceClient.prototype.send_get = function(uid, g, latest, len) {
   var output = new this.pClass(this.output);
   output.writeMessageBegin('get', Thrift.MessageType.CALL, this.seqid);
   var args = new TimeLineIFace_get_args();
   args.uid = uid;
   args.g = g;
-  args.start = start;
+  args.latest = latest;
   args.len = len;
   args.write(output);
   output.writeMessageEnd();
@@ -645,7 +645,7 @@ TimeLineIFaceProcessor.prototype.process_get = function(seqid, input, output) {
   args.read(input);
   input.readMessageEnd();
   var result = new TimeLineIFace_get_result();
-  this._handler.get(args.uid, args.g, args.start, args.len, function (success) {
+  this._handler.get(args.uid, args.g, args.latest, args.len, function (success) {
     result.success = success;
     output.writeMessageBegin("get", Thrift.MessageType.REPLY, seqid);
     result.write(output);

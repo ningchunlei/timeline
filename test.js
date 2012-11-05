@@ -28,6 +28,18 @@ t =new ShareStruct_ttypes.Msg({"uid":"aaa","mid":"msgid","msgtext":"msgtext"})
 t.write(output)
 output.flush()
 
+var redis = require("redis")
+var client = redis.createClient(6379,"192.168.10.84");
+
+
+setInterval(function(){
+    var a = ["ad",function(err,reply){console.log(reply)}];
+    client.zcard.apply(client,a)
+    console.log("xxx")
+    client.quit()
+},500)
+
+
 /*var server = thrift.createServer(TimeLineService,{
  get: function(uid,type,start,len,response){
  var output = new TBinaryProtocol(new ttransport.TBufferedTransport(undefined, function(buf) {
