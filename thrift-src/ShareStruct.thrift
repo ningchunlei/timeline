@@ -5,9 +5,9 @@ include "ErrorNo.thrift"
 
 enum TimeLineType {
   Inbox = 1,
-  Outbox = 2,
-  ReadNotice = 3,
-  UnReadNotice = 4
+  Askbox = 2,
+  AnswerBox = 3,
+  NoticeBox = 4
 }
 
 enum MsgType{
@@ -41,6 +41,14 @@ enum OtherLogin{
    RenRen=42
 }
 
+enum SubjectType{
+    chinese = 1,
+    math = 2,
+    eng = 3,
+    physics = 4,
+    chemistry = 5
+}
+
 enum  ReserveUID{
    latest = 0,
    chinese = 1,
@@ -69,6 +77,11 @@ enum  ReserveUID{
 
 }
 
+enum MsgCounter{
+   answer = 1,
+   right = 2
+}
+
 struct Attach{
 	1: string attachtext,
 	2: AttachType type,
@@ -81,12 +94,14 @@ struct Msg{
   3: string uid,
   5: string pushlishTime,
   6: MsgType type,
-  7: GradeCategory category,
+  7: GradeCategory grade,
   8: string ip,
   9: string device,
   10: list<Attach> attachments,
   11: string msgdesc,
-  12: list<string> tags
+  12: list<string> tags,
+  13: SubjectType subject,
+  14: string questionmid
 }
 
 struct TimeLine{
